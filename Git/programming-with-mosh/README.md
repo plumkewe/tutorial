@@ -9,64 +9,65 @@ Cose importanti: quando usate un comando Git, scrivete -h (che sta per help) e v
 * [Git reference](https://git-scm.com/docs)
 * [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
-## Indice 
+## Indice
 
-* [**Configurazione e Informazioni**](#configurazione-e-informazioni)
-  * [`git --version`](#git---version)
-  * [`git config --global user.name`](#git-config---global-username)
-  * [`git config --global user.email`](#git-config---global-useremail)
-  * [`git config --global core.editor "code --wait"`](#git-config---global-coreeditor-code--wait)
-  * [`git config --global -e`](#git-config---global-e)
-  * [`git config --global core.autocrlf input/true`](#git-config---global-coreautocrlf-inputtrue)
-  * [`git config --help` e `git config -h`](#git-config---help-e-git-config--h)
-* [**Inizializzazione e gestione del repository**](#inizializzazione-e-gestione-del-repository)
-  * [`git init`](#git-init)
-  * [`open .git`](#open-git)
-  * [`rm -rf .git`](#rm--rf-git)  
-* [**Staging Area e modifiche**](#staging-area-e-modifiche)
-  * [`echo hello > file1.txt`](#echo-hello--file1txt)
-  * [`git status`](#git-status)
-  * [`git add <file-name.extention>`](#git-add-file-nameextention)
-  * [`git add *.txt`](#git-add-txt)
-  * [`git add .`](#git-add-)
-  * [`echo world >> file1.txt`](#echo-world--file1txt)
-* [**Commit**](#commit)
-  * [`git commit -m "Messaggio del commit"`](#git-commit--m-messaggio-del-commit)
-  * [`git commit`](#git-commit)
-  * `[:wq]`](#wq)
-* [**Rimozione e spostamento**](#rimozione-e-spostamento)
-  * [`rm file2.md`](#rm-file2md)
-  * [`git ls-files`](#git-ls-files)
-  * [`git rm file2.txt`](#git-rm-file2txt)
-  * [`mv file1.txt main.html`](#mv-file1txt-mainhtml)
-* [**File ignorati**](#file-ignorati)
-  * [`.gitignore`](#gitignore)
-* [**Opzioni avanzate di rimozione**](#opzioni-avanzate-di-rimozione)
-  * [`git rm -h`](#git-rm--h)
-  * [`git rm --cached bin/`](#git-rm---cached-bin)
-  * [`git rm --cached -r bin/`](#git-rm---cached-r-bin)
-* [**Visualizzazione delle differenze**](#visualizzazione-delle-differenze)
-  * [`git status -s`](#git-status--s)
-  * [`git diff --staged`](#git-diff---staged)
-  * [`git diff`](#git-diff)
-  * [`git config --global diff.tool`](#git-config---global-difftool)
-  * [`git config --global difftool.<>.cmd`](#git-config---global-difftoolcmd)
-  * [`git difftool`](#git-difftool)
-  * [`git difftool --staged`](#git-difftool---staged)
-* [**Esaminare la storia**](#esaminare-la-storia)
-  * [`git log`](#git-log)
-  * [`git log --oneline`](#git-log---oneline)
-  * [`git log --oneline --reverse`](#git-log---oneline---reverse)
-  * [`git show d07ffbf`](#git-show-d07ffbf)
-  * [`git show HEAD~1`](#git-show-head1)
-  * [`git show HEAD~1:.gitignore`](#git-show-head1gitignore)
-  * [`git ls-tree HEAD`](#git-ls-tree-head)
-* [**Ripristino e pulizia**](#ripristino-e-pulizia)
-  * [`git restore --staged file.html`](#git-restore---staged-filehtml)
-  * [`git clean`](#git-clean)
-  * [`git clean -fd`](#git-clean--fd)
-  * [`git restore --source=HEAD~1 file.html`](#git-restore---sourcehead1-filehtml)
-
+* [Commandi](#commandi)
+	* [Configurazione e Informazioni](#configurazione-e-informazioni)
+		* [git --version](#git---version)
+		* [git config --global user.name "Il tuo nome"](#git-config---global-username-il-tuo-nome)
+		* [git config --global user.email "la-tua-email@example.com"](#git-config---global-useremail-la-tua-emailexamplecom)
+		* [git config --global core.editor "code --wait"](#git-config---global-coreeditor-code---wait)
+		* [git config --global -e](#git-config---global--e)
+		* [git config --global core.autocrlf input](#git-config---global-coreautocrlf-input)
+		* [git config --global core.autocrlf true](#git-config---global-coreautocrlf-true)
+		* [git config --help e git config -h](#git-config---help-e-git-config--h)
+	* [Inizializzazione e gestione del repository](#inizializzazione-e-gestione-del-repository)
+		* [git init](#git-init)
+		* [open .git](#open-git)
+		* [rm -rf .git](#rm--rf-git)
+	* [Staging Area e modifiche](#staging-area-e-modifiche)
+		* [echo hello > file1.txt](#echo-hello-file1txt)
+		* [git status](#git-status)
+		* [git add <file-name.extention>](#git-add-file-nameextention)
+		* [git add .txt](#git-add-txt)
+		* [git add .](#git-add-)
+		* [echo world >> file1.txt](#echo-world-file1txt)
+	* [Commit](#commit)
+		* [git commit -m "Messaggio del commit"](#git-commit--m-messaggio-del-commit)
+		* [git commit](#git-commit)
+		* [:wq](#wq)
+	* [Rimozione e spostamento](#rimozione-e-spostamento)
+		* [rm file2.md](#rm-file2md)
+		* [git ls-files](#git-ls-files)
+		* [git rm file2.txt](#git-rm-file2txt)
+		* [mv file1.txt main.html](#mv-file1txt-mainhtml)
+	* [File ignorati](#file-ignorati)
+		* [.gitignore](#gitignore)
+	* [Opzioni avanzate di rimozione](#opzioni-avanzate-di-rimozione)
+		* [git rm -h](#git-rm--h)
+		* [git rm --cached bin/](#git-rm---cached-bin)
+		* [git rm --cached -r bin/](#git-rm---cached--r-bin)
+	* [Visualizzazione delle differenze](#visualizzazione-delle-differenze)
+		* [git status -s](#git-status--s)
+		* [git diff --staged](#git-diff---staged)
+		* [git diff](#git-diff)
+		* [--global diff.tool <>](#--global-difftool-)
+		* [git config --global difftool.<>.cmd "code --wait --diff $LOCAL $REMOTE"](#git-config---global-difftoolcmd-code---wait---diff-local-remote)
+		* [git difftool](#git-difftool)
+		* [git difftool --staged](#git-difftool---staged)
+	* [Esaminare la storia](#esaminare-la-storia)
+		* [git log](#git-log)
+		* [git log --oneline](#git-log---oneline)
+		* [git log --oneline --reverse](#git-log---oneline---reverse)
+		* [git show d07ffbf](#git-show-d07ffbf)
+		* [git show HEAD1](#git-show-head1)
+		* [git show HEAD1:.gitignore](#git-show-head1gitignore)
+		* [git ls-tree HEAD](#git-ls-tree-head)
+	* [Ripristino e pulizia](#ripristino-e-pulizia)
+		* [git restore --staged file.html](#git-restore---staged-filehtml)
+		* [git clean](#git-clean)
+		* [git clean -fd](#git-clean--fd)
+		* [git restore --source=HEAD1 file.html](#git-restore---sourcehead1-filehtml)
 
 ## Commandi
 
@@ -124,6 +125,9 @@ Mostra la documentazione completa e un riassunto delle opzioni disponibili per i
 
 ### Inizializzazione e gestione del repository
 
+<p align="right">(<a href="#indice">indice</a>)</p>
+
+
 #### `git init`
 
 Inizializza un nuovo repository Git nella directory corrente.
@@ -140,6 +144,8 @@ Apre la cartella `.git` (su macOS).
 Cancella il repository Git.
 
 ### Staging Area e modifiche
+
+<p align="right">(<a href="#indice">indice</a>)</p>
 
 #### `echo hello > file1.txt`
 
@@ -194,6 +200,8 @@ Apre l'editor di testo predefinito per scrivere un messaggio di commit più dett
 Salva ed esce dall'editor **Vim**.
 
 ### Rimozione e spostamento
+
+<p align="right">(<a href="#indice">indice</a>)</p>
 
 #### `rm file2.md`
 
