@@ -20,7 +20,7 @@ Repository definitiva in cui conserverò tutto il codice sorgente dei libri che 
 		<img height="32" width="32" src="https://cdn.simpleicons.org/git/red" alt="Git" />
 	</a>
 	<a href="/Zsh/README.md" target="_blank">
-		<img height="32" width="32" src="https://cdn.simpleicons.org/zsh/README.md" alt="Zsh" />
+		<img height="32" width="32" src="https://cdn.simpleicons.org/zsh/red" alt="Zsh" />
 	</a>
 <p>
 
