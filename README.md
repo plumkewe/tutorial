@@ -6,23 +6,26 @@ Repository definitiva in cui conserverò tutto il codice sorgente dei libri che 
 
 <p>
 	<a href="/CPP" target="_blank">
-		<img height="32" width="32" src="https://cdn.simpleicons.org/c++/E69903" />
+		<img height="32" width="32" src="https://cdn.simpleicons.org/c++/red" />
 	</a>
-	<img height="32" width="32" src="https://cdn.simpleicons.org/python/orange" />
+	<img height="32" width="32" src="https://cdn.simpleicons.org/python/grey" />
 	<a href="/HTML" target="_blank">
-		<img height="32" width="32" src="https://cdn.simpleicons.org/html5/E69903" />
+		<img height="32" width="32" src="https://cdn.simpleicons.org/html5/red" />
 	</a>
 	<a href="/CSS" target="_blank">
-		<img height="32" width="32" src="https://cdn.simpleicons.org/css/E69903" />
+		<img height="32" width="32" src="https://cdn.simpleicons.org/css/red" />
 	</a>
-	<img height="32" width="32" src="https://cdn.simpleicons.org/mysql/orange" >
-	<a href="/Git" target="_blank">
-		<img height="32" width="32" src="https://cdn.simpleicons.org/git/E69903" alt="Git" />
+	<img height="32" width="32" src="https://cdn.simpleicons.org/mysql/grey" >
+	<a href="/Git/README.md" target="_blank">
+		<img height="32" width="32" src="https://cdn.simpleicons.org/git/red" alt="Git" />
+	</a>
+	<a href="/Zsh/README.md" target="_blank">
+		<img height="32" width="32" src="https://cdn.simpleicons.org/zsh/README.md" alt="Zsh" />
 	</a>
 <p>
 
 > [!NOTE]
-> Le icone di colore più scuro indicano che nella repository sono presenti dei file correlati e, quindi, possono essere cliccate per visualizzarli.	
+> Le icone di colore red indicano che nella repository sono presenti dei file correlati e, quindi, possono essere cliccate per visualizzarli.	
 
 ## Da rivedere
 
@@ -67,6 +70,11 @@ Repository definitiva in cui conserverò tutto il codice sorgente dei libri che 
 	<tr>
 		<td>GIT</td>
 		<td><img src="res/image/4.jpg" height="50" alt="image" /><a href="https://www.youtube.com/watch?v=8JJ101D3knE">Mosh Hamedani</a></td>
+		<td>EN</td>
+	</tr>
+	<tr>
+		<td>ZHS</td>
+		<td><img height="50" width="50" src="https://cdn.simpleicons.org/GitHub" alt="Zsh" /><a href="https://github.com/0nn0/terminal-mac-cheatsheet">terminal-mac-cheatsheet</a></td>
 		<td>EN</td>
 	</tr>
 </table>
